@@ -42,7 +42,7 @@ app.get("/nifty50", async (req, res) => {
 
     res.status(200).json(response.data.data);
   } catch (error) {
-    console.error("Error fetching data:", error.message);
+    console.error("Error fetching data:", error);
     res.status(500).json({ error: "Internal server error" });
   }
 });
